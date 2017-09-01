@@ -4,6 +4,7 @@ var server = http.createServer(function (request, response) {
 
   response.setHeader('Content-Type', 'text/html')
 
+  respone.writeHead(200, 'success')
   response.write('<html><head><meta charset="utf-8" /></head></html>')
   response.write('<body>')
   response.write('<h1>你好</h1>')
