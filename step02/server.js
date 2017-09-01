@@ -54,7 +54,7 @@ function staticRoot(staticPath, req, res){
   fs.readFile(filePath, 'binary', function(err, content){
     if(err){
       res.writeHead(404, 'Not Found')
-      return res.end()
+      return res.end('<h1>404 Not Found</h1>')
     }
 
     res.writeHead(200, 'ok')
